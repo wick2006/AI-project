@@ -9,13 +9,13 @@ from torch.utils.data import DataLoader
 
 from dataloader import mnist_loader as ml
 from models.cnn import Net
-from toonnx import to_onnx
+#from toonnx import to_onnx
 
 
 parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
 parser.add_argument('--datapath', required=True, help='data path')
 parser.add_argument('--batch_size', type=int, default=256, help='training batch size')
-parser.add_argument('--epochs', type=int, default=50, help='number of epochs to train')
+parser.add_argument('--epochs', type=int, default=10, help='number of epochs to train')
 parser.add_argument('--use_cuda', default=False, help='using CUDA for training')
 
 args = parser.parse_args()
