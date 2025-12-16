@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 from torch.autograd import Variable
 from torchvision import transforms
 from models.cnn import Net
-#from toonnx import to_onnx
+from toonnx import to_onnx
 
-use_cuda = True
+use_cuda = False
 model = Net(10)
 model.load_state_dict(torch.load('output/params_3.pth'))
 model.eval()

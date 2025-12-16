@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader
 
 from dataloader import mnist_loader as ml
 from models.cnn import Net
-#from toonnx import to_onnx
+from toonnx import to_onnx
 
 
 parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
